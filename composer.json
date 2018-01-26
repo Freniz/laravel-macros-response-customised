@@ -3,19 +3,13 @@
     "description": "Customised Response Macro's for Laravel",
     "keywords": ["freniz", "customised","laravel", "response", "macros", "php"],
     "license": "MIT",
-    "type": "composer-plugin",
+    "type": "composer-installer",
     "authors": [
         {
             "name": "Abdul Nizam",
             "email": "abdulnizam@freniz.com",
             "homepage": "http://www.freniz.com",
             "role": "Developer"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/Freniz/laravel-macros-response-customised.git"
         }
     ],
     "require": {
@@ -48,5 +42,5 @@
             ]
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
