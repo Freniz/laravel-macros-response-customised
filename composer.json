@@ -12,6 +12,12 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Freniz/laravel-macros-response-customised.git"
+        }
+    ],
     "require": {
         "php": ">=5.6",
         "laravel/framework": ">=5.4"
@@ -42,5 +48,5 @@
             ]
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
