@@ -1,0 +1,52 @@
+{
+    "name": "freniz/laravel-macros-response-customised",
+    "description": "Customised Response Macro's for Laravel",
+    "keywords": ["freniz", "customised","laravel", "response", "macros", "php"],
+    "license": "MIT",
+    "type": "composer-installer",
+    "authors": [
+        {
+            "name": "Abdul Nizam",
+            "email": "abdulnizam@freniz.com",
+            "homepage": "http://www.freniz.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Freniz/laravel-macros-response-customised.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "laravel/framework": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Freniz\\ResponseMacros\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Freniz\\ResponseMacros\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Freniz\\ResponseMacros\\ResponseMacrosServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
