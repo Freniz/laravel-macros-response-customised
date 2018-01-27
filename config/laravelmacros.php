@@ -4,6 +4,6 @@ return [
 
   'data' => true,
 
-  'custom' => true
+  'custom' => false
 
 ];

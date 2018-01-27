@@ -6,18 +6,17 @@ use Illuminate\Support\ServiceProvider;
 
 class ResponseMacrosServiceProvider extends ServiceProvider
 {
+    protected $defer = false;
+
     /**
      * Bootstrap the application services.
      */
     public function boot()
     {
-
-        if ($this->app->runningInConsole()) {
            
-            $this->publishes([
-                __DIR__.'/../config/laravelmacros.php' => config_path('laravelmacros.php'),
-            ], 'config');
-        }
+        $this->publishes([
+            __DIR__.'/../config/laravelmacros.php' => config_path('laravelmacros.php'),
+        ], 'laravelmacros');
 
     }
 
@@ -30,4 +29,17 @@ class ResponseMacrosServiceProvider extends ServiceProvider
 
         $this->app->make('Freniz\ResponseMacros\ResponseMacros');
     }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [
+
+        ];
+    }
+
 }
