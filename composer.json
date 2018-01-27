@@ -32,7 +32,7 @@
             "php artisan vendor:publish --provider=\"freniz\\laravel-macros-response-customised\\ResponseMacrosServiceProvider\" --tag=laravelmacros --force"
         ],
         "post-create-project-cmd": [
-            "php -r \"copy('vendor/freniz/laravel-macros-response-customised/config/laravelmacros.php', 'config/laravelmacros.php');\""
+            "php -r \"copy('config/laravelmacros.php', '../../../config/laravelmacros.php');\""
         ]
     },
     "extra": {
