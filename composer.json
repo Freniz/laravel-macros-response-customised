@@ -2,7 +2,8 @@
     "name": "freniz/laravel-macros-response-customised",
     "description": "Customised Response Macro's for Laravel",
     "keywords": ["freniz", "customised","laravel", "response", "macros", "php"],
-    "license": "MIT",
+    "license": "MIT", 
+    "type": "composer-installer",
     "homepage": "http://www.freniz.com",
     "authors": [
         {
@@ -41,6 +42,5 @@
                 "Freniz\\ResponseMacros\\ResponseMacrosServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
