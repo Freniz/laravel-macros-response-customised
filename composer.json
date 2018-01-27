@@ -3,7 +3,7 @@
     "description": "Customised Response Macro's for Laravel",
     "keywords": ["freniz", "customised","laravel", "response", "macros", "php"],
     "license": "MIT", 
-    "type": "composer-installer",
+    "type": "library",
     "homepage": "http://www.freniz.com",
     "authors": [
         {
@@ -31,13 +31,13 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable":true,
     "extra": {
         "laravel": {
             "providers": [
                 "Freniz\\ResponseMacros\\ResponseMacrosServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable":true
 }
