@@ -1,14 +1,15 @@
 {
-    "name": "Freniz/laravel-macros-response-customised",
+    "name": "freniz/laravel-macros-response-customised",
     "description": "Customised Response Macro's for Laravel",
     "keywords": ["freniz", "customised","laravel", "response", "macros", "php"],
     "license": "MIT",
     "type": "composer-installer",
+    "homepage": "http://www.freniz.com",
     "authors": [
         {
             "name": "Abdul Nizam",
             "email": "abdulnizam@freniz.com",
-            "homepage": "http://www.freniz.com",
+            "homepage": "http://www.abdulnizam.com",
             "role": "Developer"
         }
     ],
