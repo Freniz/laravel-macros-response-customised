@@ -26,11 +26,6 @@
             "Freniz\\ResponseMacros\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Freniz\\ResponseMacros\\Test\\": "tests"
-        }
-    },
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
