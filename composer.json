@@ -3,7 +3,7 @@
     "description": "Customised Response Macro's for Laravel",
     "keywords": ["freniz", "customised","laravel", "response", "macros", "php"],
     "license": "MIT",
-    "type": "composer-plugin",
+    "type": "composer-installer",
     "authors": [
         {
             "name": "Abdul Nizam",
