@@ -15,10 +15,10 @@ class ResponseMacrosServiceProvider extends ServiceProvider
     {
            
         $this->publishes([
-            $this->getConfigPath => config_path('laravelmacros.php'),
+            self::getConfigPath() => config_path('laravelmacros.php'),
         ], 'laravelmacros');
 
-        if (!copy($this->getConfigPath, $this->getMainConfigPath)) {
+        if (!copy(self::getConfigPath(), self::getMainConfigPath())) {
             echo "failed to copy $file...\n";
         }
 
@@ -46,12 +46,12 @@ class ResponseMacrosServiceProvider extends ServiceProvider
         ];
     }
 
-    private function getConfigPath()
+    private static function getConfigPath()
     {
         return __DIR__.'/../config/laravelmacros.php';
     }
 
-    private function getMainConfigPath()
+    private static function getMainConfigPath()
     {
         return __DIR__.'/../../../../config/laravelmacros.php';
     }
