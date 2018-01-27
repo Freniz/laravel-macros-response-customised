@@ -15,6 +15,10 @@ class ResponseMacrosServiceProvider extends ServiceProvider
             __DIR__.'/../config/config.php' => config_path('laravelmacros.php'),
         ], 'laravelmacros-config');
 
+        if ($this->app->runningInConsole()) {
+            //
+        }
+
     }
 
     /**
