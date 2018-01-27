@@ -11,9 +11,10 @@ class ResponseMacrosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            //
-        }
+        $this->publishes([
+            __DIR__.'/../config/config.php' => config_path('laravelmacros.php'),
+        ], 'laravelmacros-config');
+
     }
 
     /**
@@ -21,6 +22,8 @@ class ResponseMacrosServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravelmacros');
+
         $this->app->make('Freniz\ResponseMacros\ResponseMacros');
     }
 }
