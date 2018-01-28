@@ -19,6 +19,7 @@ class ResponseMacros
     public function __construct(ResponseFactory $factory)
     {
         $this->macros = [
+            Macros\Custom::class,
             Macros\Message::class,
             Macros\Success::class,
             Macros\Error::class,

@@ -2,8 +2,9 @@
 
 return [
 
-  'data' => true,
+  'multiple' => false,
 
-  'custom' => false
+  'custom' => array()
+
 
 ];
