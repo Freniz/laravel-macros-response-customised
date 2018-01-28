@@ -40,6 +40,7 @@ Result
     "status": 1,
     "message": "Welcome to the laravel macros"
 }
+```
 
 ``` php
 return response()->custom_error([0, 'Welcome to the laravel macros']);
@@ -52,7 +53,7 @@ Result
     "status": 0,
     "errors": "Welcome to the laravel macros"
 }
-
+```
 
 ### Message
 ``` php
