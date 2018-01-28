@@ -25,10 +25,16 @@ path : config/laravelmacros.php
 
 custom => array('status', 'message')
 
+custom_error => array('status', 'errors')
+
 then 
 
 ``` php
-return response()->message([1, 'Welcome to the laravel macros'], 200);
+return response()->custom([1, 'Welcome to the laravel macros']);
+```
+
+``` php
+return response()->custom_error([1, 'Welcome to the laravel macros']);
 ```
 
 ### Message
