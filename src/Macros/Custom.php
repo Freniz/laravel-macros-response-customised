@@ -13,7 +13,6 @@ class Custom implements ResponseMacroInterface
         
         $factory->macro('custom', function ($data, $status) use ($factory) {
 
-            $multiple = Config::get('laravelmacros.multiple', 'false');
             $custom = Config::get('laravelmacros.custom', array('message'));
 
             $results = [];

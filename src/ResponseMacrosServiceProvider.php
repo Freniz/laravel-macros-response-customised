@@ -18,9 +18,9 @@ class ResponseMacrosServiceProvider extends ServiceProvider
             self::getConfigPath() => config_path('laravelmacros.php'),
         ], 'laravelmacros');
 
-        if (!copy(self::getConfigPath(), self::getMainConfigPath())) {
-            echo "failed to copy $file...\n";
-        }
+        // if (!copy(self::getConfigPath(), self::getMainConfigPath())) {
+        //     echo "failed to copy $file...\n";
+        // }
 
     }
 
