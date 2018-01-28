@@ -8,7 +8,7 @@ return [
 	
 	//default
   
-  'custom' => array('message') 
+  'custom' => array('message'), 
 
   'custom_error' => array('errors');
 
