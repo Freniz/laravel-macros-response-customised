@@ -5,7 +5,7 @@ namespace Freniz\ResponseMacros\Macros;
 use Freniz\ResponseMacros\ResponseMacroInterface;
 use Config;
 
-class Message implements ResponseMacroInterface
+class Custom implements ResponseMacroInterface
 {
     public function run($factory)
     {
