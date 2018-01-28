@@ -33,9 +33,26 @@ then
 return response()->custom([1, 'Welcome to the laravel macros']);
 ```
 
+Result
+
+``` json
+{
+    "status": 1,
+    "message": "Welcome to the laravel macros"
+}
+
 ``` php
-return response()->custom_error([1, 'Welcome to the laravel macros']);
+return response()->custom_error([0, 'Welcome to the laravel macros']);
 ```
+
+Result
+
+``` json
+{
+    "status": 0,
+    "errors": "Welcome to the laravel macros"
+}
+
 
 ### Message
 ``` php
