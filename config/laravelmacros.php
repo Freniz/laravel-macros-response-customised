@@ -10,7 +10,7 @@ return [
   
   'custom' => array('message'), 
 
-  'custom_error' => array('errors');
+  'custom_error' => array('errors')
 
 
 ];
