@@ -13,16 +13,34 @@ composer require freniz/laravel-macros-response-customised
 
 ## Usage
 
+### Custom
+
+To use custom run this comand to config the custom variables
+
+``` bash
+cp 'vendor/freniz/laravel-macros-response-customised/config/laravelmacros.php' config/laravelmacros.php
+```
+
+path : config/laravelmacros.php
+
+custom => array('status', 'message')
+
+then 
+
+``` php
+return response()->message([1, 'Welcome to the laravel macros'], 200);
+```
+
 ### Message
 ``` php
-return response()->message('Welcome to laravel macro's", 200);
+return response()->message('Welcome to laravel macros", 200);
 ```
 
 Result
 
 ``` json
 {
-    "message": "Welcome to laravel macro's"
+    "message": "Welcome to laravel macros"
 }
 ```
 With the Http `Status Code: 200`
