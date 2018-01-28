@@ -5,15 +5,15 @@ namespace Freniz\ResponseMacros\Macros;
 use Freniz\ResponseMacros\ResponseMacroInterface;
 use Config;
 
-class Custom implements ResponseMacroInterface
+class CustomError implements ResponseMacroInterface
 {
     public function run($factory)
     {
 
         
-        $factory->macro('custom', function ($data, $status = 200) use ($factory) {
+        $factory->macro('custom_error', function ($data, $status = 400) use ($factory) {
 
-            $custom = Config::get('laravelmacros.custom', array('message'));
+            $custom = Config::get('laravelmacros.custom_error', array('errors'));
 
             $results = [];
 

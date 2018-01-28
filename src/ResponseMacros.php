@@ -20,6 +20,7 @@ class ResponseMacros
     {
         $this->macros = [
             Macros\Custom::class,
+            Macros\CustomError::class,
             Macros\Message::class,
             Macros\Success::class,
             Macros\Error::class,
