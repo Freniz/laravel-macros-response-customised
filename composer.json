@@ -25,14 +25,14 @@
         "sort-packages": true
     },
     "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('config/laravelmacros.php') || copy('/../../../../config/laravelmacros.php', 'config/laravelmacros.php');\""
+        ],
         "post-install-cmd": [
-            "php artisan vendor:publish --provider=\"freniz\\laravel-macros-response-customised\\ResponseMacrosServiceProvider\" --tag=laravelmacros --force"
+            "php artisan vendor:publish --provider=\"freniz\\laravel-macros-response-customised\\ResponseMacrosServiceProvider\" --tag=laravelmacros"
         ],
         "post-update-cmd": [
-            "php artisan vendor:publish --provider=\"freniz\\laravel-macros-response-customised\\ResponseMacrosServiceProvider\" --tag=laravelmacros --force"
-        ],
-        "post-autoload-dump": [
-             "@php -r \"file_exists('config/laravelmacros.php') || copy('../../../config/laravelmacros.php', 'config/laravelmacros.php');\""
+            "php artisan vendor:publish --provider=\"freniz\\laravel-macros-response-customised\\ResponseMacrosServiceProvider\" --tag=laravelmacros"
         ]
     },
     "extra": {
