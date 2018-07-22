@@ -8,7 +8,7 @@ laravel package to control the response and customise the dataname as per the re
 This package can be installed using composer. Find the comand below
 
 ``` bash
-composer require freniz/laravel-macros-response-customised
+composer require abdulnizam/laravel-macros-response-customised
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ composer require freniz/laravel-macros-response-customised
 To use custom run this comand to config the custom variables
 
 ``` bash
-cp 'vendor/freniz/laravel-macros-response-customised/config/laravelmacros.php' config/laravelmacros.php
+cp 'vendor/abdulnizam/laravel-macros-response-customised/config/laravelmacros.php' config/laravelmacros.php
 ```
 
 path : config/laravelmacros.php
